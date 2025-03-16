@@ -156,7 +156,7 @@ async function logRollResult(characterName, diceResult, block, attribute) {
     }`
   );
 }
-
+// Função principal
 async function playRaceEngine(character1, character2) {
   for (let round = 1; round <= 5; round++) {
     console.log(`🏁 Rodada ${round} `);
@@ -268,7 +268,7 @@ async function playRaceEngine(character1, character2) {
     console.log('------------------------------------------------');
   }
 }
-
+// Função para mostrar o placar
 function winnerRacing(character1, character2) {
   console.log(`\n 🏁🏁🏁 PLACAR FINAL 🏁🏁🏁\n`);
   console.log(`${character1.NOME}: ${character1.PONTOS} pontos`);
@@ -282,7 +282,7 @@ function winnerRacing(character1, character2) {
     console.log('Empataram!');
   }
 }
-
+// Função para embaralhar os jogadores
 function randomPlayers() {
   const playersCopy = [...players];
   const shuffledPLayers = playersCopy.sort(() => Math.random() - 0.5);
